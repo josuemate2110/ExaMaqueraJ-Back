@@ -13,7 +13,7 @@ import pe.edu.upeu.service.LibroService;
 public class HomeController {
 	@Autowired
 	private LibroService libroService;
-	@GetMapping("/")
+	@GetMapping("/libro")
 	public List<Libro> libro() {
 		return libroService.readAll();
 	}
